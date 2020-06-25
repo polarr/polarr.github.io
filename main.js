@@ -250,11 +250,7 @@ var sketchProc = function(processingInstance) {
             popMatrix();
         }
     }
-    
-    mouseDragged = function(){
-        rot (cube.v, 'x', mouseY - pmouseY);
-        rot (cube.v, 'y', mouseX - pmouseX);
-    };
+
         noStroke();
         var circles = [];
         var circle = function(x, y, t, c){
