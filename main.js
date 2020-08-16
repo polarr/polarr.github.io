@@ -81,9 +81,9 @@ function on_mousemove (ev) {
     var x, y;
 
     // Get the mouse position relative to the canvas element
-    if (ev.layerX || ev.layerX == 0) { // For Firefox
-        x = ev.layerX;
-        y = ev.layerY;
+    if (ev.clientX || ev.clientX == 0) { // For Firefox
+        x = ev.clientX;
+        y = ev.clientY;
     }
     x -= gl.canvas.width;
     // Link hover
