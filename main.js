@@ -24,6 +24,8 @@ resize(false, false, gl.canvas, true);
 canvas2d.width = window.innerWidth - gl.canvas.clientWidth - 4;
 canvas2d.height = gl.canvas.clientHeight;
 
+var w = canvas2d.width;
+var h = canvas2d.height;
 gl.clearColor(0, 0, 0, 0);
 gl.clear(gl.COLOR_BUFFER_BIT);
 
