@@ -127,40 +127,40 @@ function draw(){
     gl.drawArrays(gl.TRIANGLES, 0, 6);
     gl.uniform1f(timeL, (time - startTime)/2000);
     
-    ctx.clearRect(0, 0, canvas2d.width, canvas2d.height);
+    ctx.clearRect(0, 0, w, h);
     ctx.font = "bold 50px Segoe UI";
-    ctx.fillText("CSA's Website", 70, 100);
+    ctx.fillText("CSA's Website", 70* w/695, 100* h/666);
 
     ctx.beginPath();
-    ctx.moveTo(70, 170);
-    ctx.lineTo(170, 170);
-    ctx.moveTo(415, 360);
-    ctx.lineTo(475, 360);
+    ctx.moveTo(70* w/695, 170* h/666);
+    ctx.lineTo(170* w/695, 170* h/666);
+    ctx.moveTo(350* w/695 + 65, 360* h/666);
+    ctx.lineTo(350* w/695 + 130, 360* h/666);
     ctx.strokeStyle = "#000000";
     ctx.stroke();
 
     ctx.font = "normal 18px Segoe UI";
-    ctx.fillText("Hey there I'm a 14yo who likes math, physics & computer science", 70, 200);
-    ctx.fillText("I am proficient at university+contest math and I do competitive programming", 70, 230);
-    ctx.fillText("I also play the guitar and basketball, tho I'm not very great at either :P", 70, 260);
-    ctx.fillText("Sometimes I fiddle with cool things like 3D rendering and make games", 70, 290);
+    ctx.fillText("Hey there I'm a 14yo who likes math, physics & computer science", 70* w/695, 200* h/666);
+    ctx.fillText("I am proficient at university+contest math and I do competitive programming", 70* w/695, 230* h/666);
+    ctx.fillText("I also play the guitar and basketball, tho I'm not very great at either :P", 70* w/695, 260* h/666);
+    ctx.fillText("Sometimes I fiddle with cool things like 3D rendering and make games", 70* w/695, 290* h/666);
 
-    ctx.fillText("Quick links", 70, 350);
+    ctx.fillText("Quick links", 70* w/695, 350* h/666);
 
-    drawLink(95, 400, "https://github.com/CSA-Programming","My Github");
-    drawLink(95, 430, "https://codeforces.com/profile/1egend", "My Codeforces");
-    drawLink(95, 460, "https://artofproblemsolving.com/community/my-aops","My AoPS");
-    drawLink(95, 490, "https://www.shadertoy.com/profile?show=shaders","My Shadertoy");
-    drawLink(95, 520, "https://www.khanacademy.org/profile/IsCSA/projects","Old Inactive KA (Cringe games)");
+    drawLink(95* w/695, 400* h/666, "https://github.com/CSA-Programming","My Github");
+    drawLink(95* w/695, 430* h/666, "https://codeforces.com/profile/1egend", "My Codeforces");
+    drawLink(95* w/695, 460* h/666, "https://artofproblemsolving.com/community/my-aops","My AoPS");
+    drawLink(95* w/695, 490* h/666, "https://www.shadertoy.com/profile?show=shaders","My Shadertoy");
+    drawLink(95* w/695, 520* h/666, "https://www.khanacademy.org/profile/IsCSA/projects","Old Inactive KA (Cringe games)");
 
-    ctx.fillText("Games I suck at play", 350, 350);
-    ctx.fillText("Minecraft", 375, 400);
-    ctx.fillText("Destiny 2", 375, 425);
-    ctx.fillText("KSP", 375, 450);
-    ctx.fillText("CS: GO", 375, 475);
-    ctx.fillText("Valorant", 375, 500);
+    ctx.fillText("Games I suck at play", 350* w/695, 350* h/666);
+    ctx.fillText("Minecraft", 375* w/695, 400* h/666);
+    ctx.fillText("Destiny 2", 375* w/695, 425* h/666);
+    ctx.fillText("KSP", 375* w/695, 450* h/666);
+    ctx.fillText("CS: GO", 375* w/695, 475* h/666);
+    ctx.fillText("Valorant", 375* w/695, 500* h/666);
 
-    ctx.fillText("Discord: CSA#3493", canvas2d.width - 170, canvas2d.height - 30);
+    ctx.fillText("Discord: CSA#3493", w - 170* w/695, h - 30* w/695);
 
     window.reqAnimationFrame(draw, 1000/60);
 }
