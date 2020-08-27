@@ -142,18 +142,19 @@ function draw(){
     ctx.stroke();
 
     ctx.font = "normal 18px Segoe UI";
-    ctx.fillText("Hey there I'm a 14yo who likes math, physics & computer science", 70* w/695, 200* h/666);
-    ctx.fillText("I am proficient at university+contest math and I do competitive programming", 70* w/695, 230* h/666);
+    ctx.fillText("Hey there I'm a 14yo who likes math, physics & computer science.", 70* w/695, 200* h/666);
+    ctx.fillText("I'm proficient at university+contest math and I do competitive programming", 70* w/695, 230* h/666);
     ctx.fillText("I also play the guitar and basketball, tho I'm not very great at either :P", 70* w/695, 260* h/666);
-    ctx.fillText("Sometimes I fiddle with cool things like 3D rendering and make games", 70* w/695, 290* h/666);
+    ctx.fillText("Sometimes I fiddle with cool things like 3D rendering and machine learning", 70* w/695, 290* h/666);
 
     ctx.fillText("Quick links", 70* w/695, 350* h/666);
 
     drawLink(95* w/695, 400* h/666, "https://github.com/CSA-Programming","My Github");
-    drawLink(95* w/695, 430* h/666, "https://codeforces.com/profile/1egend", "My Codeforces");
+    drawLink(95* w/695, 430* h/666, "https://codeforces.com/profile/1egend", "Codeforces (New account)");
     drawLink(95* w/695, 460* h/666, "https://artofproblemsolving.com/community/my-aops","My AoPS");
     drawLink(95* w/695, 490* h/666, "https://www.shadertoy.com/profile?show=shaders","My Shadertoy");
-    drawLink(95* w/695, 520* h/666, "https://www.khanacademy.org/profile/IsCSA/projects","Old Inactive KA (Cringe games)");
+                                                                                        //Codeforces (New account low rating)
+    drawLink(95* w/695, 520* h/666, "https://www.khanacademy.org/profile/IsCSA/projects","Old KA (Cringe)");
 
     ctx.fillText("Games I suck at play", 350* w/695, 350* h/666);
     ctx.fillText("Minecraft", 375* w/695, 400* h/666);
