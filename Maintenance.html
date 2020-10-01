@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1egendSite</title>
+    <style>
+        html, body {
+            margin: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            background-color: rgba(200, 200, 200);
+            overflow: hidden;
+        }
+        #circleDiv {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 100px;
+        }
+        #circle{
+            position: relative;
+            border-radius: 50%;
+            bottom: 300px;
+            right: 300px;
+            width: 600px;
+            height: 600px;
+            background-color: rgba(255, 255, 255);
+        }
+        #warning {
+            position: absolute;
+            text-align: center;
+            top:25%;
+            width: 99%;
+        }
+        #title{
+            position: absolute;
+            text-align: center;
+            top:35%;
+            width: 99%;
+        }
+        #description {
+            position: absolute;
+            text-align: center;
+            top: 60%;
+            width: 99%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id = "c"></canvas>
+    <div id = "circleDiv"><div id = "circle"></div></div>
+    <div id = "warning"><img src = "https://image.flaticon.com/icons/png/512/66/66872.png" width = "100px"></div>
+    <h1 id = "title">Oops.</h1>
+    <div id = "description">Sorry, this website is temporarily down for maintenance.<br>
+    In the meantime, view my <a href = "https://github.com/1e9end">Github Page</a>.</div>
+</body>
+<script>
+    var canvas = document.getElementById("c");
+    function updateDimensions() {
+        canvas.width = (window.innerWidth || 0);
+        canvas.height = (window.innerHeight || 0);
+    }
+    updateDimensions();
+    var context = canvas.getContext("2d");
+
+    var circleColors = new Array();
+    circleColors[0] = "#f0f";
+    circleColors[1] = "#0f0";
+    circleColors[2] = "#00f";
+    circleColors[3] = "#f00";
+
+    var circles = [];
+
+    (function(){
+        for (var i = 0; i < 20; i++) {
+            var direction = Math.random() * 2 * Math.PI;
+            var circle = {
+                posX: Math.floor(Math.random() * canvas.width),
+                posY: Math.floor(Math.random() * canvas.height),
+                color: circleColors[Math.floor(Math.random() * circleColors.length)],
+                speed: Math.floor(Math.random()*5),
+                
+                xVel: Math.cos(direction),
+                yVel: Math.sin(direction),
+                size: Math.floor(Math.random() * 50 + 20)
+            };
+            console.log(circle.xVel);
+            circles.push(circle);
+        }
+
+        function renderCircles() {
+            for (var i = 0; i < circles.length; i++) {
+                var c = circles[i];
+                context.fillStyle = c.color;
+                context.beginPath();
+                context.arc(c.posX, c.posY, c.size, 0, 2 * Math.PI);
+                context.fill();
+            }
+        }
+
+        function animationLoop() {
+            canvas.width = canvas.width;
+            renderCircles();
+            for (var i = 0; i < circles.length; i++) {
+                var c = circles[i];
+                c.posX += c.xVel;
+                c.posY += c.yVel;
+                if (c.posX + c.size/2 < 0 || c.posX > canvas.width + c.size/2){
+                    c.xVel *= -1;
+                }
+                if (c.posY + c.size/2 < 0 || c.posY > canvas.height + c.size/2){
+                    c.yVel *= -1;
+                }
+            }
+            window.onload = updateDimensions;
+            window.onresize = updateDimensions;
+            requestAnimationFrame(animationLoop);
+        }
+        window.onload = animationLoop;
+    })();
+</script>
+</html>
