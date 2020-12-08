@@ -1,1 +1,63 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Brawlers</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "main.js" defer></script>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        #header{
+            padding: 20px 60px 20px 60px;
+            text-align: center;
+            background: #1abc9c;
+            font-size: 150%;
+            position: relative;
+            margin: -10px;
+            font-family: sans-serif;
+            color: white;
+        }
+        #leaderboardDiv{
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+            border-spacing: 5px;
+            font-family: calibri;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        table tr:nth-child(even) {
+          background-color: #eee;
+        }
+        table tr:nth-child(odd) {
+          background-color: #fff;
+        }
+        table tr:nth-child(2) {
+          background-color: gold;
+        }
+        table tr:nth-child(3) {
+          background-color: silver;
+        }
+        table tr:nth-child(4) {
+          background-color: #cd7f32;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+	   <h1>Trophy Pushing Leaderboard</h1>
+       <h2>Better Brawlers</h2>
+    </div>
+    <div id = "leaderboardDiv">
+    <table id = "leaderboard">
+        <tr><th>Rank</th><th>Member</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th><th>Raw Gains</th><th>Total Gains</th></tr>
+    </table>
+    </div>
+</body>
+</html>
