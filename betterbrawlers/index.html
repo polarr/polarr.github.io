@@ -9,19 +9,21 @@
     <style>
         body{
             overflow-x: hidden;
+            font-family: sans-serif;
         }
         #header{
-            padding: 20px 60px 20px 60px;
-            text-align: center;
-            background: #1abc9c;
+            padding: 20px 20px 20px 20px;
+            background: #0a3c89;
             font-size: 150%;
             position: relative;
             margin: -10px;
-            font-family: sans-serif;
             color: white;
         }
         #leaderboardDiv{
             margin-top: 20px;
+        }
+        #footer{
+            text-align: center;
         }
         table, th, td {
             border: 1px solid black;
@@ -51,13 +53,17 @@
 </head>
 <body>
     <div id="header">
-	   <h1>Trophy Pushing Leaderboard</h1>
-       <h2>Better Brawlers</h2>
+        <img style = "float: left; margin-top: 1%; width: 5%" src = "BB.png">
+	   <h1 style = "float: left; margin-top: 20px; padding-left: 10px">Trophy Pushing Leaderboard</h1>
+       <h2 style = "text-align: right;">Better Brawlers</h2>
     </div>
     <div id = "leaderboardDiv">
     <table id = "leaderboard">
         <tr><th>Rank</th><th>Member</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th><th>Raw Gains</th><th>Total Gains</th></tr>
     </table>
+    </div>
+    <div id = "footer">
+        Made with 💖 by <a href = "https://1e9end.github.io">1egend</a>
     </div>
 </body>
 </html>
