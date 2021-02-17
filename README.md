@@ -1,7 +1,7 @@
 ## 1egend's Website
 
 My personal website hosted by Github Pages. View it [here](https://1e9end.github.io)!<br>
-Made with Bootstrap, jQuery, and helper libraries for some interactive features.
+Made with Bootstrap, jQuery, and helper libraries for some interactive features: Font Awesome, Isotope, jQuery Easing, jQuery Magnific Popup, Swiper.
 
 ### Subpages:<br>
 \processing: My Processing archive, with collection of games from my early programming days<br>
