@@ -574,11 +574,6 @@ strong {
 } 
 
 /*     Description     */
-.cards-1 {
-	padding-top: 3rem;
-	padding-bottom: 2.875rem;
-}
-
 .cards-1 .card {
 	margin-bottom: 2.5rem;
 	border: none;
@@ -614,6 +609,7 @@ strong {
 
 .cards-1 .card-title {
 	margin-bottom: 0.625rem;
+	text-align: center;
 }
 
 /*     Descriptions     */
@@ -1130,6 +1126,10 @@ a:hover.back-to-top {
 	.basic-1 .text-container {
 		margin-top: 1.875rem;
 		margin-right: 3rem;
+	}
+
+	.cards-1 {
+		margin-top: 1.875rem;
 	}
 
 	/* Description */
