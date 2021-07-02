@@ -1,502 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="1egend">
-
-    <!-- OG Meta Tags for Social Media -->
-	<meta property="og:title" content="1egend"/> 
-	<meta property="og:description" content="1egend's Homepage" /> 
-	<meta property="og:image" content= "./images/favicon.png"/> 
-	<meta property="og:url" content= "https://1e9end.github.io/"/> 
-	<meta property="og:type" content="website"/>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1egend</title>
-    
-    <!-- Stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/fontawesome-all.css" rel="stylesheet">
-    <link href="./css/swiper.css" rel="stylesheet">
-	<link href="./css/magnific-popup.css" rel="stylesheet">
-	<link href="./css/styles.css" rel="stylesheet">
-	
-	<!-- Icon -->
-    <link rel="icon" href="./images/favicon.png">
+    <link rel = "icon" href = "https://wallpaperaccess.com/full/2213426.jpg">
+    <style>
+        html, body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            // font-size: 40px;
+            background-color: #CCCCCC;
+            overflow: hidden;
+        }
+        #circleDiv{
+            position: absolute;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+        #title{
+            font-size: 10vmin;
+            margin-top: 30%;
+        }
+        #description {
+            font-size: 2vmin;
+        }
+    </style>
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+<body>
+    <canvas id = "c"></canvas>
+    <div id = "circleDiv">
+        <h1 id = "title">Oops.</h1>
+        <div id = "description">Sorry, my website is temporarily down for maintenance.<br>
+        In the meantime, view my <a href = "https://github.com/1e9end">Github Page</a>.</div>
     </div>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Image Logo -->
-        <div class="logo-cropper"><a class="navbar-brand logo-image" href="index.html"><img src="./images/logo.png"></a></div>
-        
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href=".slider">SKILLS</a>
-                </li>
-                <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#projects" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="https://1e9end.github.io/Akira"><span class="item-text">AKIRA</span></a>
-                        <a class="dropdown-item" href="https://1e9end.github.io/devtype"><span class="item-text">DEVTYPE</span></a>
-                        <a class="dropdown-item" href="https://1e9end.github.io/bb"><span class="item-text">BB</span></a>
-                        <a class="dropdown-item" href="https://1e9end.github.io/graphics"><span class="item-text">3D FRACTALS</span></a>
-                        <a class="dropdown-item" href="https://1e9end.github.io/processing"><span class="item-text">GAMES ARCHIVE</span></a>
-                    </div>
-                </li>
-            </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="https://github.com/1e9end">
-                        <img src="https://image.flaticon.com/icons/png/512/25/25231.png" style="width: 25px">
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="https://discord.com/users/365886855469727745">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" style="width: 25px">
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="https://www.youtube.com/channel/UClZN6f71XImxoznqJ4jPknw">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" style="width: 25px">
-                    </a>
-                </span>
-            </span>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-container">
-                            <h1>1egend</h1>
-                            <p class="p-heading p-large">legends never die</p>
-                            <a class="btn-solid-lg page-scroll" href="#intro">About</a>
-                        </div>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </header>
-
-    <!-- Intro -->
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="text-container">
-                        <div class="section-title">ABOUT</div>
-                        <h2>Hey! I'm 1egend 👋</h2>
-                        <p>I'm a 15 year old student living in Canada.</p>
-                        <p>I'm highly interested in computer science and math! Specifically, the following:</p>
-                        <ul>
-                            <li>Fullstack Web Development</li>
-                            <li>Game Development</li>
-                            <li>3D Computer Graphics</li>
-                            <li>Competitive Programming</li>
-                        </ul>
-                    </div>
-                </div> 
-                <div class="col-lg-6">
-                    <div class="cards-1">
-                        <div class="section-title">HOBBIES</div>
-                        <br/>
-                        <!-- Hobby cards -->
-                        <div class="card" style="margin-right: 3vw">
-                            <span class="fa-stack">
-                                <span class="hexagon" style="display: block; text-align: center">
-                                    <img src = "https://freepngimg.com/thumb/guitar/8-guitar-png-image.png" style="position: relative; height: 100px">
-                                </span>
-                            </span>
-                            
-                            <div class="card-body">
-                                <h4 class="card-title">Guitar</h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <span class="fa-stack">
-                                <span class="hexagon" style="display: block; text-align: center">
-                                    <img src = "https://freepngimg.com/thumb/one_piece/23231-5-one-piece-chibi-image.png" style = "position: relative; height:100px">
-                                </span>
-                            </span>
-                            <div class="card-body">
-                                <h4 class="card-title">Anime</h4>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <span class="fa-stack">
-                                <span class="hexagon" style="display: block; text-align: center">
-                                    <img src = "https://tccl.libnet.info/images/events/tccl/clipart-playing-video-games-2.png" style = "position: relative; height:80px">
-                                </span>
-                            </span>
-                            <div class="card-body">
-                                <h4 class="card-title">Games</h4>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-
-
-    <!-- Description -->
-    
-
-    <!-- descriptions -->
-    <div class="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Skills</h2>
-                    <p class="p-heading">Tools, Languages, Frameworks I'm familiar with</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
-                                        <div class="card-body">
-                                            <div class="description-author">C/C++</div>
-                                        </div>
-                                    </div>
-                                </div> 
-
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://images.squarespace-cdn.com/content/v1/56b8dfcf62cd94ec072ddb33/1547134322115-TKQN4NJZILFDO4QZPK1D/ke17ZwdGBToddI8pDm48kKlpVKiEURsX431SqXz8nxBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzVE_KPDWd5nuuyA2GuVyRzFpGKFhPO_p49iyD9f3TqR2SihW5_e2KtoMig5lJZCBA/Mean+Stack.png" alt="MEAN Stack">
-                                        <div class="card-body">
-                                            <div class="description-author">MEAN Stack</div>
-                                        </div>
-                                    </div>
-                                </div> 
-
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://library.kissclipart.com/20180902/zbe/kissclipart-html-css-js-clipart-cascading-style-sheets-javascr-3b2d7284409d411e.png" alt="Frontend">
-                                        <div class="card-body">
-                                            <div class="description-author">HTML/CSS/JS</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.io">
-                                        <div class="card-body">
-                                            <div class="description-author">Socket.io</div>
-                                        </div>
-                                    </div>        
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://avatars.githubusercontent.com/u/70142?s=200&v=4" alt="jQuery">
-                                        <div class="card-body">
-                                            <div class="description-author">jQuery</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://www.opengl.org/img/opengl_logo.png" alt="Open/WebGL">
-                                        <div class="card-body">
-                                            <div class="description-author">Open/WebGL</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-        
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://miro.medium.com/max/4320/1*E6jhcyx5k-18j5Aadq4FTg.png" alt="Tensorflow">
-                                        <div class="card-body">
-                                            <div class="description-author">Machine Learning (Python)</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-        
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://cdn4.iconfinder.com/data/icons/web-development-5/500/gamepad-gear-512.png" alt="Game Development">
-                                        <div class="card-body">
-                                            <div class="description-author">Game Development</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/1200px-Processing_Logo_Clipped.svg.png" alt="Processing.js">
-                                        <div class="card-body">
-                                            <div class="description-author">P5 GUI Library</div>
-                                        </div>
-                                    </div>        
-                                </div> 
-                            
-                            </div> 
-        
-                            <!-- Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div> 
-                    </div> 
-
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-
-    <!-- Projects -->
-	<div id="projects" class="filter">
-		<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">PROJECTS</div>
-                    <h2>Featured Projects</h2>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Filter Buttons -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>All</span></a>
-                        <a class="button" data-filter=".web"><span>Web</span></a>
-                        <a class="button" data-filter=".games"><span>Games</span></a>
-                        <a class="button" data-filter=".tools"><span>Tools</span></a>
-                        <a class="button" data-filter=".graphics"><span>Graphics</span></a>
-                        <a class="button" data-filter=".other"><span>Other</span></a>
-                    </div>
-                    <div class="grid">
-                        <div class="element-item web">
-                            <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Akira</span></div>
-                            <img src="images/project-1.jpg" class="lightbox-img" alt="Akira"></a>
-                        </div>
-                        <div class="element-item graphics tools">
-                            <a class="popup-with-move-anim" href="#project-2"><div class="element-item-overlay"><span>Raz</span></div>
-                            <img src="images/project-2.png" class="lightbox-img" alt="Rasterization Engine"></a>
-                        </div>
-                        <div class="element-item web">
-                            <a class="popup-with-move-anim" href="#project-3"><div class="element-item-overlay"><span>BB</span></div>
-                            <img src="images/project-3.png" class="lightbox-img" alt="BB"></a>
-                        </div>
-                        <div class="element-item web">
-                            <a class="popup-with-move-anim" href="#project-4"><div class="element-item-overlay"><span>Devtype</span></div>
-                            <img src="images/project-4.png" class="lightbox-img" alt="Devtype"></a>
-                        </div>
-                        <div class="element-item tools">
-                            <a class="popup-with-move-anim" href="#project-5"><div class="element-item-overlay"><span>Impact</span></div>
-                            <img src="images/project-5.png" class="lightbox-img" alt="Impact"></a>
-                        </div>
-                        <div class="element-item graphics">
-                            <a class="popup-with-move-anim" href="#project-6"><div class="element-item-overlay"><span>3D Fractals</span></div>
-                            <img src="images/project-6.png" class="lightbox-img" alt="3D Fractals"></a>
-                        </div>
-                        <div class="element-item games">
-                            <a class="popup-with-move-anim" href="#project-7"><div class="element-item-overlay"><span>Infected</span></div>
-                            <img src="images/project-7.png" class="lightbox-img" alt="Infected"></a>
-                        </div>
-                        <div class="element-item web games">
-                            <a class="popup-with-move-anim" href="#project-8"><div class="element-item-overlay"><span>Minesweeper Battles</span></div>
-                            <img src="images/project-8.png" class="lightbox-img" alt="Minesweeper Battles"></a>
-                        </div>
-                    </div> 
-                    
-                </div> 
-            </div> 
-		</div> 
-    </div> 
-    <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-1.jpg" alt="Akira">
-            </div> 
-            <div class="col-lg-4">
-                <h3>Akira</h3>
-                <hr class="line-heading">
-                <h6>Discord Bot</h6>
-                <p>Multifunctional Discord Bot, with fun and useful features. A great addition to your server!</p>
-                <p><strong>Features</strong></p>
-                <ul>
-                    <li>Moderation</li>
-                    <li>Actions</li>
-                    <li>Server-specific prefixes</li>
-                    <li>More to come!</li>
-                </ul>
-                <p>Dev Tags: Node.js, Discord.js, Heroku, MongoDB.</p>
-                <a class="btn-solid-reg" href="https://1e9end.github.io/Akira">Website</a> <a class="btn-outline-reg mfp-close as-button" href="https://github.com/1e9end/Akira">Github</a> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="project-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-2.png" alt="Raz">
-            </div> 
-            <div class="col-lg-4">
-                <h3>Raz</h3>
-                <hr class="line-heading">
-                <h6>3D Rasterization Engine</h6>
-                <p>A rendering engine for polygonal 3D shapes.</p>
-                <p>Dev Tags: Linear Algebra, Light Tracing</p>
-                <a class="btn-outline-reg mfp-close as-button" href="#projects">Demo to come soon!</a> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="project-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-3.png" alt="BB">
-            </div> 
-            <div class="col-lg-4">
-                <h3>BB</h3>
-                <hr class="line-heading">
-                <h6>Web App</h6>
-                <p>An automated trophy pushing leaderboard for Brawl Stars using the Brawl Stars API.</p>
-                <p>Dev Tags: Node.js, Express, Heroku, MongoDB.</p>
-                <a class="btn-solid-reg" href="https://1e9end.github.io/bb">Website</a> <a class="btn-outline-reg mfp-close as-button" href="https://github.com/1e9end/bb">Github</a> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="project-4" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-4.png" alt="Devtype">
-            </div> 
-            <div class="col-lg-4">
-                <h3>Devtype</h3>
-                <hr class="line-heading">
-                <h6>Typing Platform</h6>
-                <p>Developer typing practice with visual stats and feedback. Practice typing syntax and symbols from various languages (e.g C++ algorithms, SQL queries).</p>
-                <p>Made with <a href="https://github.com/TheCelestialCube">TheCelestialCube</a>, as a submission to a hackathon.</p>
-                <a class="btn-solid-reg" href="https://1e9end.github.io/devtype">Website</a> <a class="btn-outline-reg mfp-close as-button" href="https://github.com/1e9end/devtype">Github</a> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="project-5" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-5.png" alt="Impact">
-            </div>
-            <div class="col-lg-4">
-                <h3>Impact.js</h3>
-                <hr class="line-heading">
-                <h6>WebGL Library</h6>
-                <p>Used to help boilerplate setup in WebGL</p>
-                <p>In the future will transform into GLSL Rendering Library</p>
-                <a class="btn-outline-reg mfp-close as-button" href="https://github.com/1e9end/Impact">Github</a> 
-            </div> 
-        </div> 
-    </div> 
-    <div id="project-6" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-6.png" alt="3D Fractals">
-            </div>
-            <div class="col-lg-4">
-                <h3>3D Fractals</h3>
-                <hr class="line-heading">
-                <h6>Raymarched Computer Graphics</h6>
-                <p>Collection of cool 3D fractals.</p>
-                <p>Includes: Ambient lighting, Specular lighting, Dynamic Camera & Scale, Hard shadows, (occlusion to come)</p>
-                <p>Dev Tags: Linear Algebra, Light tracing, WebGL, <a href = "https://www.github.com/1e9end/Impact">Impact.js</a></p>               
-                <a class="btn-solid-reg" href="https://1e9end.github.io/graphics">View</a>
-            </div>
-        </div> 
-    </div>
-    <div id="project-7" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-7.png" alt="Infected">
-            </div>
-            <div class="col-lg-4">
-                <h3>Infected</h3>
-                <hr class="line-heading">
-                <h6>Platformer Shooter Game</h6>
-                <p>From my <a href="https://1e9end.github.io/processing">Processing Archive</a></p>
-                <p>Fun Platformer Shooter Game based on the COVID-19 pandemic. Complete with multiple guns, enemies, storyline and cool dynamic effects (Rain, Motion Blur, Particles)</p>
-                <p>Dev Tags: Processing.js, Vanilla JS</p>
-                <a class="btn-solid-reg" href="https://1e9end.github.io/processing/Infected">Play</a>
-            </div>
-        </div> 
-    </div>
-    <div id="project-8" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <img class="img-fluid" src="images/project-8.png" alt="Minesweeper Battles">
-            </div>
-            <div class="col-lg-4">
-                <h3>Minesweeper Battles</h3>
-                <hr class="line-heading">
-                <h6>Real-time Online Multiplayer Minesweeper</h6>
-                <p>Compete against friends or match online to see who can solve a game of Minesweeper first. Take advantage of green board and freeze as a twist on this classic game.</p>
-                <p>Dev Tags: Node.js, Express, Socket.io, HTML/CSS/JS</p>
-                <a class="btn-solid-reg" href="https://minesweeper.1egend.repl.co">Play</a>
-            </div>
-        </div> 
-    </div>
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Made with ❤ by 1egend</p>
-                </div>
-            </div>
-        </div>
-    </div> 
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Project Popup -->
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/scripts.js"></script>
 </body>
+<script>
+    var canvas = document.getElementById("c");
+    var circle = document.getElementById("circleDiv");
+    function updateDimensions() {
+        canvas.width = (window.innerWidth || 0);
+        canvas.height = (window.innerHeight || 0);
+        var x = .7 * Math.min(window.innerHeight, window.innerWidth);
+        circle.style.width = x + "px";
+        console.log(x);
+        circle.style.height = x + "px";
+        circle.style.left = window.innerWidth/2 - x/2 + "px";
+        circle.style.top = window.innerHeight/2 - x/2 + "px";
+    }
+    updateDimensions();
+    var context = canvas.getContext("2d");
+
+    var circleColors = new Array();
+    circleColors[0] = "#f0f";
+    circleColors[1] = "#0f0";
+    circleColors[2] = "#00f";
+    circleColors[3] = "#f00";
+
+    var circles = [];
+
+    (function(){
+        for (var i = 0; i < 20; i++) {
+            var direction = Math.random() * 2 * Math.PI;
+            var circle = {
+                posX: Math.floor(Math.random() * canvas.width),
+                posY: Math.floor(Math.random() * canvas.height),
+                color: circleColors[Math.floor(Math.random() * circleColors.length)],
+                speed: Math.floor(Math.random()*5),
+                
+                xVel: Math.cos(direction),
+                yVel: Math.sin(direction),
+                size: Math.floor(Math.random() * 50 + 20)
+            };
+            // console.log(circle.xVel);
+            circles.push(circle);
+        }
+
+        function renderCircles() {
+            for (var i = 0; i < circles.length; i++) {
+                var c = circles[i];
+                context.fillStyle = c.color;
+                context.beginPath();
+                context.arc(c.posX, c.posY, c.size, 0, 2 * Math.PI);
+                context.fill();
+            }
+        }
+
+        function animationLoop() {
+            canvas.width = canvas.width;
+            renderCircles();
+            for (var i = 0; i < circles.length; i++) {
+                var c = circles[i];
+                c.posX += c.xVel;
+                c.posY += c.yVel;
+                if (c.posX + c.size/2 < 0 || c.posX > canvas.width + c.size/2){
+                    c.xVel *= -1;
+                }
+                if (c.posY + c.size/2 < 0 || c.posY > canvas.height + c.size/2){
+                    c.yVel *= -1;
+                }
+            }
+            window.onload = updateDimensions;
+            window.onresize = updateDimensions;
+            requestAnimationFrame(animationLoop);
+        }
+        window.onload = animationLoop;
+    })();
+</script>
 </html>
