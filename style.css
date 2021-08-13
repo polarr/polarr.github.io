@@ -12,10 +12,18 @@ body{
     height: 100vh;
     background-color: #EEE;
 }
+.v-center{
+    display: block;
+    position: relative; 
+    top: 50%; 
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 #content {
     position: relative;
     height: 100vh;
-    width: clamp(400px, 50vw, 900px);
+    width: clamp(400px, 60vw, 1000px);
     margin: 0 auto;
     overflow-y: auto;
     background-color: #fff;
@@ -29,12 +37,16 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 #header{
+    position: sticky;
+    top: 0;
+    left: 0;
     height: 100px;
-    color: #fff;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-family: 'Montserrat', sans-serif;
+    z-index: 2;
 }
 #logo {
     width: 70px;
@@ -61,9 +73,14 @@ body{
     align-content: center;
 }
 .social-icon > a > img {
+    opacity: 100%;
+    transition: 0.3s;
     width: 25px;
     height: 25px;
     margin-left: 10px;
+}
+.social-icon > a > img:hover {
+    opacity: 70%;
 }
 .section-title {
     font-family: 'Open Sans', sans-serif;
@@ -90,11 +107,71 @@ body{
 .card-description {
 	color: #484a46;
 }
-.v-center{
-    display: block;
-    position: relative; 
-    top: 50%; 
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: clamp(300px, 45%, 400px);
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #999;
+    transition: 0.3s;
+}
+.project:hover {
+    box-shadow: 0 8px 16px #999;
+}
+@media only screen and (max-width: 1250px) {
+    .project {
+        width: 90%;
+    }
+}
+.project-image {
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.project-content {
+    height: 40%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-title > a {
+    color: #000;
+    transition: 0.3s;
+    font-size: 1.3rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.project-title > a:hover {
+    color: #666;
+}
+.project-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.project-source > img {
+    opacity: 100%;
+    transition: 0.3s;
+    align-self: center;
+    width: 25px;
+}
+.project-source > img:hover {
+    opacity: 70%;
+}
+.project-date {
+    margin-left: auto;
+}
+#footer {
+    width: 100%;
+    color: #666;
+    font-style: italic;
+    text-align: center;
 }

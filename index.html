@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
     <meta name="author" content="1egend">
 
     <!-- OG Meta Tags for Social Media -->
-	<meta property="og:title" content="1egend"/> 
-	<meta property="og:description" content="1egend's Homepage" /> 
-	<meta property="og:image" content= "./images/favicon.png"/> 
+	<meta property="og:title" content="1egend's Homepage"/> 
+	<meta property="og:description" content="Personal website" /> 
+	<meta property="og:image" content= "./assets/logo.jpg"/> 
+    <meta property="og:site_name" content= "1egend"/> 
 	<meta property="og:url" content= "https://1e9end.github.io/"/> 
 	<meta property="og:type" content="website"/>
 
@@ -49,18 +50,23 @@
             </div>
             <div id = "social-icons">
                 <div class = "social-icon">
-                    <a href="https://github.com/1e9end">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg">
+                    <a href="https://github.com/1e9end" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
                     </a>
                 </div>
                 <div class = "social-icon">
-                    <a href="https://discord.com/users/365886855469727745">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg">
+                    <a href="https://discord.com/users/365886855469727745" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" alt="Discord">
                     </a>
                 </div>
                 <div class = "social-icon">
-                    <a href="https://www.youtube.com/channel/UClZN6f71XImxoznqJ4jPknw">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg">
+                    <a href="https://www.youtube.com/channel/UClZN6f71XImxoznqJ4jPknw" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" alt="Youtube">
+                    </a>
+                </div>
+                <div class = "social-icon">
+                    <a href="https://artofproblemsolving.com/community/user/IAmLegend" target="_blank">
+                        <img src="assets/aops.png" alt="Art of Problem Solving">
                     </a>
                 </div>
             </div>
@@ -87,7 +93,6 @@
                 <div class = "section-title">
                     SKILLS
                 </div>
-
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -162,10 +167,80 @@
         <div id = "projects">
             <div class = "section-content">
                 <div class = "section-title">
-                    PROJECTS
+                    FEATURED PROJECTS
                 </div>
-                <div style = "text-align: center">Will include when motivated...</div>
+                <div class = "project-wrapper">
+                    <div class="project">
+                        <img src="/assets/brawltrack.png" class="project-image">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="https://brawltrack.com">BrawlTrack</a>
+                            </div>
+                            <div class="project-description">
+                                Performance and ranking platform for the mobile game Brawl Stars.
+                            </div>
+                            <div class="project-details">
+                                Private Source
+                                <span class="project-date">3/2/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="/assets/virtualolympiad.png" class="project-image">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="https://virtual-olympiad.1egend.repl.co">Virtual Olympiad</a>
+                            </div>
+                            <div class="project-description">
+                                Online multiplayer math platform with questions from the AMC, AIME and more! Much more modes and content to come!
+                            </div>
+                            <div class="project-details">
+                                <a href="https://github.com/1e9end/virtual-olympiad" class="project-source">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
+                                </a>
+                                <span class="project-date">6/22/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="/assets/fractals.png" class="project-image">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="https://1e9end.github.io/graphics/">3D Fractals</a>
+                            </div>
+                            <div class="project-description">
+                                3D Fractal animations rendered live with WebGL, demonstrating applications of Linear Algebra and volumetric ray tracing.
+                            </div>
+                            <div class="project-details">
+                                <a href="https://github.com/1e9end/graphics" class="project-source">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
+                                </a>
+                                <span class="project-date">3/22/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="/assets/minesweeper.png" class="project-image">
+                        <div class="project-content">
+                            <div class="project-title">
+                                <a href="https://minesweeper.1egend.repl.co">Minesweeper Battles</a>
+                            </div>
+                            <div class="project-description">
+                                Online multiplayer Minesweeper platform for playing a modified 1v1 version of Minesweeper. 
+                            </div>
+                            <div class="project-details">
+                                <a href="https://github.com/1e9end/minesweeper-battles" class="project-source">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
+                                </a>
+                                <span class="project-date">4/9/2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div id = "footer">
+            Last updated 8/13/2021
         </div>
     </div>
 </body>
