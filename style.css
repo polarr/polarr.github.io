@@ -26,6 +26,7 @@ body{
     width: clamp(400px, 60vw, 1000px);
     margin: 0 auto;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #fff;
     box-shadow: -10px 0 20px 0 #999, 10px 0 20px 0 #999;
     display: flex;
