@@ -1,247 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
-    <meta name="author" content="1egend">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
+        />
+        <meta name="author" content="1egend" />
 
-    <!-- OG Meta Tags for Social Media -->
-	<meta property="og:title" content="1egend's Homepage"/> 
-	<meta property="og:description" content="Personal website" /> 
-	<meta property="og:image" content= "./assets/logo.jpg"/> 
-    <meta property="og:site_name" content= "1egend"/> 
-	<meta property="og:url" content= "https://1e9end.github.io/"/> 
-	<meta property="og:type" content="website"/>
+        <!-- OG Meta Tags -->
+        <meta property="og:title" content="1egend's Homepage" />
+        <meta property="og:image" content="./assets/logo.png" />
+        <meta property="og:url" content="https://1e9end.github.io/" />
+        <meta property="og:type" content="website" />
 
-    <title>1egend</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet"> 
+        <title>1egend</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link href="style.css" rel="stylesheet">
-	
-	<!-- Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
-    <link rel="manifest" href="assets/icon/site.webmanifest">
-    <link rel="mask-icon" href="assets/icon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/icon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#2d89ef">
-    <meta name="msapplication-config" content="assets/icon/browserconfig.xml">
-    <meta name="theme-color" content="#000000">
-    
-    <script src="https://unpkg.com/tsparticles/tsparticles.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src = "main.js" defer></script>
-</head>
-<body>
-    <div id = "bg"></div>
-    <div id = "content">
-        <div id="header">
-            <img id = "logo" src ="assets/logo.jpg"/>
-            <div id = "name-wrapper">
-                <div id = "name">1egend</div>
-                <div id = "tag">@1e9end</div>
-            </div>
-            <div id = "social-icons">
-                <div class = "social-icon">
-                    <a href="https://github.com/1e9end" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
-                    </a>
-                </div>
-                <div class = "social-icon">
-                    <a href="https://discord.com/users/365886855469727745" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" alt="Discord">
-                    </a>
-                </div>
-                <div class = "social-icon">
-                    <a href="https://www.youtube.com/channel/UClZN6f71XImxoznqJ4jPknw" target="_blank">
-                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" alt="Youtube">
-                    </a>
-                </div>
-                <div class = "social-icon">
-                    <a href="https://artofproblemsolving.com/community/user/IAmLegend" target="_blank">
-                        <img src="assets/aops.png" alt="Art of Problem Solving">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div id = "about">
-            <div class = "section-content">
-                <div class = "section-title">
-                    ABOUT
-                </div>
-                <p>
-                    I'm 1egend 👋, a 15yo student living in Canada.<br>
-                    I'm highly interested in CS with experience in the following fields:
-                </p>
-                <ul>
-                    <li>Fullstack Web Development</li>
-                    <li>Competitive Programming</li>
-                    <li>Computer Graphics</li>
-                    <li>Game Development</li>
-                </ul>
-            </div>
-        </div>
-        <div id = "skills">
-            <div class = "section-content">
-                <div class = "section-title">
-                    SKILLS
-                </div>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" alt="C++">
-                                <div class="card-body">
-                                    <div class="card-description">C/C++</div>
-                                </div>
-                            </div>
-                        </div> 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://dotnettrickscloud.blob.core.windows.net/uploads/CourseImages/becomeamernstackdeveloper-mobile.png" alt="MERN Stack">
-                                <div class="card-body">
-                                    <div class="card-description">MERN Stack</div>
-                                </div>
-                            </div>
-                        </div> 
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link href="style.css" rel="stylesheet" />
 
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://library.kissclipart.com/20180902/zbe/kissclipart-html-css-js-clipart-cascading-style-sheets-javascr-3b2d7284409d411e.png" alt="Frontend">
-                                <div class="card-body">
-                                    <div class="card-description">HTML/CSS/JS</div>
-                                </div>
-                            </div>        
-                        </div> 
+        <!-- Icon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/icon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="assets/icon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="assets/icon/safari-pinned-tab.svg"
+            color="#99cc00"
+        />
+        <link rel="shortcut icon" href="assets/icon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta
+            name="msapplication-config"
+            content="assets/icon/browserconfig.xml"
+        />
+        <meta name="theme-color" content="#000000" />
 
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg" alt="Socket.io">
-                                <div class="card-body">
-                                    <div class="card-description">Socket.io</div>
-                                </div>
-                            </div>        
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://www.opengl.org/img/opengl_logo.png" alt="Open/WebGL">
-                                <div class="card-body">
-                                    <div class="card-description">Open/WebGL</div>
-                                </div>
-                            </div>        
-                        </div> 
-
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="Tensorflow">
-                                <div class="card-body">
-                                    <div class="card-description">Python</div>
-                                </div>
-                            </div>        
-                        </div> 
-
-                        <div class="swiper-slide">
-                            <div class="v-center">
-                                <img class="card-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/1200px-Processing_Logo_Clipped.svg.png" alt="Processing.js">
-                                <div class="card-body">
-                                    <div class="card-description">P5 GUI Library</div>
-                                </div>
-                            </div>        
-                        </div> 
-                    </div>                
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-        <div id = "projects">
-            <div class = "section-content">
-                <div class = "section-title">
-                    FEATURED PROJECTS
-                </div>
-                <div class = "project-wrapper">
-                    <div class="project">
-                        <img src="/assets/virtualolympiad.png" class="project-image">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <a href="https://virtual-olympiad.1egend.repl.co">Virtual Olympiad</a>
-                            </div>
-                            <div class="project-description">
-                                Online multiplayer math platform with questions from the AMC, AIME and more! Much more modes and content to come!
-                            </div>
-                            <div class="project-details">
-                                <a href="https://github.com/1e9end/virtual-olympiad" class="project-source">
-                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
-                                </a>
-                                <span class="project-date">6/22/2021</span>
-                            </div>
-                        </div>
+        <script src="https://unpkg.com/tsparticles/tsparticles.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="background"></div>
+        <nav class="content">
+            <div class="header">
+                <img class="logo" src="assets/logo.png" />
+                <article class="name-wrapper">
+                    <header class="name">1egend</header>
+                    <div class="tag">@1e9end</div>
+                </article>
+                <div class="social-icons">
+                    <div class="social-icon">
+                        <a
+                            href="https://github.com/1e9end"
+                            target="_blank"
+                            title="Github"
+                        >
+                            <img
+                                src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                alt="Github"
+                            />
+                        </a>
                     </div>
-                    <div class="project">
-                        <img src="/assets/brawltrack.png" class="project-image">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <a href="https://brawltrack.com">BrawlTrack</a>
-                            </div>
-                            <div class="project-description">
-                                Performance and ranking platform for the mobile game Brawl Stars.
-                            </div>
-                            <div class="project-details">
-                                Private Source
-                                <span class="project-date">3/2/2021</span>
-                            </div>
-                        </div>
+                    <div class="social-icon">
+                        <a
+                            href="https://discord.com/users/365886855469727745"
+                            target="_blank"
+                            title="Discord"
+                        >
+                            <img
+                                src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg"
+                                alt="Discord"
+                            />
+                        </a>
                     </div>
-                    <div class="project">
-                        <img src="/assets/fractals.png" class="project-image">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <a href="https://1e9end.github.io/graphics/">3D Fractals</a>
-                            </div>
-                            <div class="project-description">
-                                3D Fractal animations rendered live with WebGL, demonstrating applications of Linear Algebra and volumetric ray tracing.
-                            </div>
-                            <div class="project-details">
-                                <a href="https://github.com/1e9end/graphics" class="project-source">
-                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
-                                </a>
-                                <span class="project-date">3/22/2021</span>
-                            </div>
-                        </div>
+                    <div class="social-icon">
+                        <a
+                            href="https://artofproblemsolving.com/community/user/IAmLegend"
+                            target="_blank"
+                            title="AoPS"
+                        >
+                            <img
+                                src="assets/aops.png"
+                                alt="Art of Problem Solving"
+                            />
+                        </a>
                     </div>
-                    <div class="project">
-                        <img src="/assets/minesweeper.png" class="project-image">
-                        <div class="project-content">
-                            <div class="project-title">
-                                <a href="https://minesweeper.1egend.repl.co">Minesweeper Battles</a>
-                            </div>
-                            <div class="project-description">
-                                Online multiplayer Minesweeper platform for playing a modified 1v1 version of Minesweeper. 
-                            </div>
-                            <div class="project-details">
-                                <a href="https://github.com/1e9end/minesweeper-battles" class="project-source">
-                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="Github">
-                                </a>
-                                <span class="project-date">4/9/2021</span>
-                            </div>
-                        </div>
+                    <div class="social-icon">
+                        <a
+                            href="https://www.youtube.com/channel/UClZN6f71XImxoznqJ4jPknw"
+                            target="_blank"
+                            title="Youtube"
+                        >
+                            <img
+                                src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"
+                                alt="Youtube"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
+            <section class="about">
+                <header class="section-title">ABOUT</header>
+                <div class="section-content">
+                    I'm a 15 year old student from Canada having fun on the internet 🤞
+                    <br />
+                    Occasionally I make some interesting projects
+                    <br />
+                    I enjoy anime & gaming
+                    <br />
+                    <h3>INTERESTS</h3>
+                    <table class="interests">
+                        <tr>
+                            <td>Web Dev</td>
+                            <td>Algorithmics</td>
+                            <td>Netsec</td>
+                        </tr>
+                        <tr>
+                            <td>Math</td>
+                            <td>CG Shading</td>
+                            <td>Game Dev</td>
+                        </tr>
+                        <tr>
+                            <td>Anime</td>
+                            <td>Gaming</td>
+                            <td>Music</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="section-content">
+                    <header class="section-title">SKILLS</header>
+                    <div class="skills-container">
+                        <div>
+                            <img src="https://img.shields.io/badge/-HTML5-E34F26?logo=HTML5&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-CSS3-1572B6?logo=CSS3&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-Javascript-F7DF1E?logo=Javascript&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-Python-3776AB?logo=Python&logoColor=white&style=for-the-badge">
+                        </div>
+                        <div>
+                            <img src="https://img.shields.io/badge/-Typescript-3178C6?logo=Typescript&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=for-the-badge">
+                        </div>
+                        <div>
+                            <img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-Socket.io-010101?logo=socketdotio&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-WebGL-990000?logo=webgl&logoColor=white&style=for-the-badge">
+                        </div>
+                        <div>
+                            <img src="https://img.shields.io/badge/-PostgreSQL-4169E1?logo=MariaDB&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-MongoDB-47A248?logo=MongoDB&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white&style=for-the-badge">
+                            <img src="https://img.shields.io/badge/-GNU Bash-4EAA25?logo=GNU Bash&logoColor=white&style=for-the-badge"> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="section-content">
+                    <header class="section-title">FEATURED PROJECTS</header>
+                    <div class="project-wrapper">
+                        <article class="project">
+                            <img
+                                src="/assets/virtualolympiad.png"
+                                class="project-image"
+                            />
+                            <div class="project-content">
+                                <div class="project-title">
+                                    <a
+                                        href="https://virtual-olympiad.1egend.repl.co"
+                                        >Virtual Olympiad</a
+                                    >
+                                </div>
+                                <div class="project-description">
+                                    Online multiplayer competitive math contest/practice platform featuring
+                                    questions from the AMC and AIME.
+                                </div>
+                                <div class="project-details">
+                                    <a
+                                        href="https://github.com/1e9end/virtual-olympiad"
+                                        class="project-source"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                            alt="Github"
+                                        />
+                                    </a>
+                                    <time datetime="2021-10-1 12:00" class="project-date">2021-10</time>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project">
+                            <img
+                                src="/assets/vobot.png"
+                                class="project-image"
+                            />
+                            <div class="project-content">
+                                <div class="project-title">
+                                    <a
+                                        href="https://1e9end.github.io/vobot"
+                                        >VOBot</a
+                                    >
+                                </div>
+                                <div class="project-description">
+                                    Discord bot for competitive math practice featuring questions from the AMC & AIME.
+                                </div>
+                                <div class="project-details">
+                                    <a
+                                        href="https://github.com/1e9end/vobot"
+                                        class="project-source"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                            alt="Github"
+                                        />
+                                    </a>
+                                    <time datetime="2021-11-1 12:00" class="project-date">2021-11</time>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project">
+                            <img
+                                src="/assets/brawltrack.png"
+                                class="project-image"
+                            />
+                            <div class="project-content">
+                                <div class="project-title">
+                                    <a href="https://brawltrack.com"
+                                        >BrawlTrack</a
+                                    >
+                                </div>
+                                <div class="project-description">
+                                    Performance and ranking platform for the
+                                    mobile game Brawl Stars.
+                                </div>
+                                <div class="project-details">
+                                    Private Source
+                                    <time datetime="2021-8-1 12:00" class="project-date">2021-8</time>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project">
+                            <img
+                                src="/assets/fractals.png"
+                                class="project-image"
+                            />
+                            <div class="project-content">
+                                <div class="project-title">
+                                    <a href="https://1e9end.github.io/graphics/"
+                                        >3D Fractals</a
+                                    >
+                                </div>
+                                <div class="project-description">
+                                    Raymarching cool 3D fractals in WebGL.
+                                </div>
+                                <div class="project-details">
+                                    <a
+                                        href="https://github.com/1e9end/graphics"
+                                        class="project-source"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                            alt="Github"
+                                        />
+                                    </a>
+                                    <time datetime="2021-3-1 12:00" class="project-date">2021-3</time>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project">
+                            <img
+                                src="/assets/minesweeper.png"
+                                class="project-image"
+                            />
+                            <div class="project-content">
+                                <div class="project-title">
+                                    <a href="https://minesweeper.1egend.repl.co"
+                                        >Minesweeper Battles</a
+                                    >
+                                </div>
+                                <div class="project-description">
+                                    Real-time 1v1 versus version of the classic game Minesweeper.
+                                </div>
+                                <div class="project-details">
+                                    <a
+                                        href="https://github.com/1e9end/minesweeper-battles"
+                                        class="project-source"
+                                    >
+                                        <img
+                                            src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg"
+                                            alt="Github"
+                                        />
+                                    </a>
+                                    <time datetime="2021-4-1 12:00" class="project-date">2021-4</time>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">Last updated 2021-12-1</footer>
         </div>
-        <div id = "footer">
-            Last updated 8/13/2021
-        </div>
-    </div>
-</body>
+    </body>
 </html>
