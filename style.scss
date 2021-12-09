@@ -186,10 +186,21 @@ $bg-height: 50px;
     background-color: #eee;
 
     .skills-container {
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-    
+        justify-content: center;
+
+        > div {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            > img {
+                padding: 2px;
+            }
+        }
     }
     /**
     .swiper-container {
